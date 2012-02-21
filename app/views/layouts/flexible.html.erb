@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html manifest="<%= manifest_pad_path(@system) %>">
+<head>
+	
+	<%= stylesheet_link_tag "flexible_interface" %>
+	<%= javascript_include_tag "flexible_interface" %>
+	
+	<title>Room Control</title>	
+	
+	<link rel="icon" type="image/png" href="<%= asset_path('flexible_interface/favicon48.png') %>" sizes="48x48" />
+	<link rel="icon" type="image/png" href="<%= asset_path('flexible_interface/favicon.png') %>" sizes="32x32" />
+	<link rel="icon" type="image/vnd.microsoft.icon" href="<%= asset_path('flexible_interface/favicon.ico') %>" />
+
+	<!--
+		iPad helpers
+	 -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+	<link rel="apple-touch-icon" href="icon.png" />
+
+
+	<!--
+		IE9 / Chrome helpers
+	 -->
+	<meta name="application-name" content="Pod Control" />
+	<meta name="description" content="Collaboration spaces pod control"/>
+	<meta name="application-url" content="<%= current_url %>"/>	<!-- This is a helper function -->
+	
+	
+	<%= csrf_meta_tag %>	<!-- Rails security tag for ajax requests -->
+	
+</head>
+<body>
+	
+	<!--
+		Splash page
+	 -->
+	<section data-role="page" id="start" class="splash-page">
+		<div data-role="content">
+			<a href="#home"><img src="<%= asset_path('flexible_interface/logo.png') %>" alt="logo" /><br />Touch to Start</a>
+		</div>
+	</section>
+	
+	<%= yield %>
+	
+	<!--
+		Shutdown page
+	 -->
+	<section data-role="page" id="shutdown">
+		<div data-role="content" data-theme="a"> 
+			<h3>Shutting down will turn off the display</h3><br />
+			<a id="shutdownbtn" href="#start" data-role="button" data-theme="b">Shutdown</a>
+			<a id="cancelbtn" href="#" data-role="button" data-theme="a">Cancel</a>
+		</div>
+	</section>
+	
+</body>
+</html>
+

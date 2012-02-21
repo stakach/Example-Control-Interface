@@ -1,0 +1,36 @@
+
+
+/*
+	Landscape styles 
+*/
+section.splash-page > div {
+	text-align: center;
+}
+
+section.splash-page > div > a {
+	display:block;
+	height:100%;
+	width:100%;
+}
+
+@media screen and (orientation:landscape) {
+	section.splash-page img {
+		margin-top: 2%;
+		height: 60%;
+		margin-bottom: 2%;
+		width: auto;
+		max-width:90%;
+	}
+}
+
+/*
+	Portrait styles 
+*/
+@media screen and (orientation:portrait) {
+	section.splash-page img {
+		margin-top: 5%;
+		width: 90%;
+		margin-bottom: 5%;
+		height: auto;
+	}
+}

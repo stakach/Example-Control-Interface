@@ -1,0 +1,90 @@
+
+
+/*
+	Landscape styles 
+*/
+@media screen and (orientation:landscape) {
+	section.single-selection div.selections
+	{
+		width: 100%;
+		height: 50%;
+	}
+	
+	section.single-selection div.labels
+	{
+		width: 100%;
+		height: auto;
+	}
+	
+	section.single-selection .inputs .section-head 
+	{
+		width: 6%;
+		height: 100%;
+		float: left;
+	}
+	
+	section.single-selection .section-head 
+	{
+		height:1px!important;
+	}
+	
+			
+	section.single-selection .inputs .section
+	{
+		width: 30%;
+		height: 100%;
+		float: left;
+	}
+			
+	section.single-selection .inputs .section-box
+	{
+		width: 90%;
+		height: 80%;
+	}
+	
+	section.single-selection .inputs .section-label
+	{
+		width: 90%;
+		height: auto;
+	}
+}
+
+/*
+	Portrait styles 
+*/
+@media screen and (orientation:portrait) {
+	section.single-selection div.selections
+	{
+		width: 50%;
+		height: 100%;
+		margin-left: 10%;
+	}
+	
+	section.single-selection div.labels
+	{
+		width: 30%;
+		height: 100%;
+	}
+			
+	section.single-selection .inputs .section
+	{
+		height: 30%;
+	}
+			
+	section.single-selection .inputs .section-head 
+	{
+		height: 5%;
+	}
+			
+	section.single-selection .inputs .section-box
+	{
+		width: 80%;
+		height: 90%;
+		margin-left: 10%;
+	}
+	
+	section.single-selection .inputs .section-label
+	{
+		height: 90%;
+	}
+}

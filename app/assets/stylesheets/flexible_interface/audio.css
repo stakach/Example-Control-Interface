@@ -1,0 +1,66 @@
+
+
+
+#audio #audio-selection
+{
+	width: 100%;
+	height: 50%;
+}
+
+#audio #volume-wrapper 
+{
+	width:100%;
+	height:auto;
+	max-height: 40%;
+	margin-top: -1em;
+}
+
+
+/*
+	Landscape styles 
+*/
+@media screen and (orientation:landscape) {
+	#audio .inputs .section-head 
+	{
+		width: 6%;
+		height: 100%;
+		float: left;
+	}
+	
+			
+	#audio .inputs .section
+	{
+		width: 30%;
+		height: 100%;
+		float: left;
+	}
+			
+	#audio .inputs .section-box
+	{
+		width: 90%;
+		height: 80%;
+	}
+}
+
+
+/*
+	Portrait styles 
+*/
+@media screen and (orientation:portrait) {
+	#audio .inputs .section
+	{
+		height: 30%;
+	}
+			
+	#audio .inputs .section-head 
+	{
+		height: 0%;
+	}
+			
+	#audio .inputs .section-box
+	{
+		width: 80%;
+		height: 90%;
+		margin-left: 10%;
+	}
+}

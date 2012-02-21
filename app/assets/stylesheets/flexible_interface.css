@@ -1,0 +1,13 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included
+  
+ *= require flexible_interface/html5reset-1.6.1
+ *= require flexible_interface/jquery.mobile-1.0.1.min
+ *= require flexible_interface/core
+ *= require flexible_interface/dual
+ *= require flexible_interface/single
+ *= require flexible_interface/splash
+ *= require flexible_interface/other
+ *= require flexible_interface/audio
+*/

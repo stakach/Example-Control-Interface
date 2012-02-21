@@ -1,0 +1,44 @@
+CACHE MANIFEST
+# <%= @last_updated.to_s(:rfc822) %>
+
+CACHE:
+<% if Rails.env.production? %>
+/tokens/servers
+
+<%= asset_path('flexible_interface.js') %>
+<%= asset_path('flexible_interface.css') %>
+
+#
+# jQuery Mobile assets
+#
+/assets/flexible_interface/images/ajax-loader.png
+/assets/flexible_interface/images/icons-18-black.png
+/assets/flexible_interface/images/icons-18-white.png
+/assets/flexible_interface/images/icons-36-black.png
+/assets/flexible_interface/images/icons-36-white.png
+
+#
+# Header assets
+#
+<%= asset_path('flexible_interface/favicon.ico') %>
+<%= asset_path('flexible_interface/favicon.png') %>
+<%= asset_path('flexible_interface/favicon48.png') %>
+<%= asset_path('flexible_interface/icon.png') %>
+<%= asset_path('flexible_interface/logo.png') %>
+
+#
+# Icons used on the page
+#
+<%= asset_path('flexible_interface/20-gear2.png') %>
+<%= asset_path('flexible_interface/61-brightness.png') %>
+<%= asset_path('flexible_interface/69-display.png') %>
+<%= asset_path('flexible_interface/106-sliders.png') %>
+<%= asset_path('flexible_interface/icons/171-sun.png') %>
+<%= asset_path('flexible_interface/icons/69-display.png') %>
+<%= asset_path('flexible_interface/icons/175-macbook.png') %>
+
+
+<% end %>
+
+NETWORK:
+*

@@ -1,0 +1,63 @@
+		
+
+		
+		
+/*
+	Landscape styles 
+*/
+@media screen and (orientation:landscape) {
+	section.dual-selection .inputs
+	{
+		width: 100%;
+		height: 50%;
+	}
+			
+	section.dual-selection .inputs .section
+	{
+		width: 25%;
+		height: 100%;
+		float: left;
+	}
+			
+	section.dual-selection .inputs .section-head 
+	{
+		width: 20%;
+		height: 100%;
+		float: left;
+	}
+			
+	section.dual-selection .inputs .section-box
+	{
+		width: 90%;
+		height: 80%;
+	}
+}
+		
+		
+/*
+	Portrait styles 
+*/
+@media screen and (orientation:portrait) {
+	section.dual-selection .inputs
+	{
+		width: 50%;
+		height: 100%;
+	}
+			
+	section.dual-selection .inputs .section
+	{
+		height: 25%;
+	}
+			
+	section.dual-selection .inputs .section-head 
+	{
+		height: 20%;
+	}
+			
+	section.dual-selection .inputs .section-box
+	{
+		width: 80%;
+		height: 90%;
+		margin-left: 10%;
+	}
+}

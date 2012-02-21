@@ -1,0 +1,228 @@
+<!--
+	Source selection page
+ -->
+<section data-role="page" id="home" class="dual-selection">
+	<header data-role="header" data-position="fixed">
+		<h1>Sources</h1>
+		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
+	</header><!-- header -->
+
+	<div class="wrapper" data-role="content">
+		<div class="content">
+			<div id="preview" class="inputs">
+				<div class="section-head">
+					<h2>Preview</h2>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>Computer</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box selected">
+						<span>VGA</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>DVI</span>
+					</div>
+				</div>
+			</div>
+			<div id="project" class="inputs">
+				<div class="section-head">
+					<h2>Project</h2>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>Computer</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>VGA</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>DVI</span>
+					</div>
+				</div>
+			</div>
+		</div><!-- content -->
+	</div><!-- wrapper -->
+
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed">
+		<nav role="navigation" data-role="navbar" class="wicons">
+			<ul>
+				<li><a href="#home" class="foot-home ui-btn-active ui-state-persist" data-icon="custom">Sources</a></li>
+				<li><a href="#audio" class="foot-audio" data-icon="custom">Audio</a></li>
+				<li><a href="#lights" class="foot-lights" data-icon="custom">Lights</a></li>
+				<li><a href="#other" class="foot-other" data-icon="custom">Advanced</a></li>
+			</ul>
+		</nav><!-- navbar -->
+	</footer><!-- footer -->
+</section><!-- section -->
+
+<!--
+	AUDIO
+	May need re-think. TODO: Vertical bar
+ -->
+<section data-role="page" id="audio">
+	<header data-role="header" data-position="fixed">
+		<h1>Audio</h1>
+		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
+	</header><!-- header -->
+
+	<div class="wrapper" data-role="content">
+		<div class="content">
+			
+			<div id="audio-selection" class="inputs">
+				<div class="section-head">
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>Computer</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box selected">
+						<span>VGA</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span>DVI</span>
+					</div>
+				</div>
+			</div>
+			<div id="volume-wrapper" class="inputs">
+				<div data-role="fieldcontain">
+					<input data-theme="b" type="range" name="volume" id="volume" value="0" min="0" max="100"  />
+					<label for="volume"><h2>Volume</h2></label>
+				</div>
+			</div>
+		</div><!-- content -->
+	</div><!-- wrapper -->
+
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed">
+		<nav role="navigation" data-role="navbar" class="wicons">
+			<ul>
+				<li><a href="#home" class="foot-home" data-icon="custom">Sources</a></li>
+				<li><a href="#audio" class="foot-audio ui-btn-active ui-state-persist" data-icon="custom">Audio</a></li>
+				<li><a href="#lights" class="foot-lights" data-icon="custom">Lights</a></li>
+				<li><a href="#other" class="foot-other" data-icon="custom">Advanced</a></li>
+			</ul>
+		</nav><!-- navbar -->
+	</footer><!-- footer -->
+</section><!-- section -->
+
+
+<!--
+	Light control
+ -->
+<section data-role="page" id="lights" class="single-selection">
+	<header data-role="header" data-position="fixed">
+		<h1>Lights</h1>
+		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
+	</header><!-- header -->
+
+	<div class="wrapper" data-role="content">
+		<div class="content">
+			<div class="inputs selections">
+				<div class="section-head">
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span><img src="<%= asset_path('flexible_interface/icons/171-sun.png') %>" alt="full" /></span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box selected">
+						<span><img src="<%= asset_path('flexible_interface/icons/171-sun.png') %>" alt="projection" /></span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-box">
+						<span><img src="<%= asset_path('flexible_interface/icons/171-sun.png') %>" alt="off" /></span>
+					</div>
+				</div>
+			</div>
+			<div class="inputs labels">
+				<div class="section-head">
+				</div>
+				<div class="section">
+					<div class="section-label">
+						<span>Full</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-label">
+						<span>Projection</span>
+					</div>
+				</div>
+				<div class="section">
+					<div class="section-label">
+						<span>Off</span>
+					</div>
+				</div>
+			</div>
+		</div><!-- content -->
+	</div><!-- wrapper -->
+
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed">
+		<nav role="navigation" data-role="navbar" class="wicons">
+			<ul>
+				<li><a href="#home" class="foot-home" data-icon="custom">Sources</a></li>
+				<li><a href="#audio" class="foot-audio" data-icon="custom">Audio</a></li>
+				<li><a href="#lights" class="foot-lights ui-btn-active ui-state-persist" data-icon="custom">Lights</a></li>
+				<li><a href="#other" class="foot-other" data-icon="custom">Advanced</a></li>
+			</ul>
+		</nav><!-- navbar -->
+	</footer><!-- footer -->
+</section><!-- section -->
+
+
+<!--
+	Advanced controls
+ -->
+<section data-role="page" id="other">
+	<header data-role="header" data-position="fixed">
+		<h1>Advanced</h1>
+		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
+	</header><!-- header -->
+
+	<div class="wrapper" data-role="content">
+		<div class="content">
+			<div class="inputs">
+				<div data-role="fieldcontain">
+					<label for="projector1-status">Projector:</label>
+					<select name="projector1-status" id="projector1-status" data-role="slider">
+						<option value="off">Off</option>
+						<option value="on">On</option>
+					</select> 
+				</div>
+			</div>
+			<div class="inputs">
+				<div data-role="fieldcontain">
+					<label for="screen1-status">Projector Screen:</label>
+					<select name="screen1-status" id="screen1-status" data-role="slider">
+						<option value="off">Up</option>
+						<option value="on">Down</option>
+					</select>
+				</div>
+			</div>
+		</div><!-- content -->
+	</div><!-- wrapper -->
+
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed">
+		<nav role="navigation" data-role="navbar" class="wicons">
+			<ul>
+				<li><a href="#home" class="foot-home" data-icon="custom">Sources</a></li>
+				<li><a href="#audio" class="foot-audio" data-icon="custom">Audio</a></li>
+				<li><a href="#lights" class="foot-lights" data-icon="custom">Lights</a></li>
+				<li><a href="#other" class="foot-other ui-btn-active ui-state-persist" data-icon="custom">Advanced</a></li>
+			</ul>
+		</nav><!-- navbar -->
+	</footer><!-- footer -->
+</section><!-- section -->

@@ -1,0 +1,98 @@
+/*
+	Core styles
+*/
+body 
+{
+	overflow:hidden;
+}
+
+
+.wrapper
+{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+.content 
+{
+	overflow: hidden;
+	height:100%;
+}
+		
+/*
+	Footer styles
+*/
+footer.wicons .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+footer.wicons .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: none !important; border-radius: none !important; }
+.foot-home .ui-icon { background:  url(<%= asset_path('flexible_interface/69-display.png') %>) 50% 50% no-repeat;}
+.foot-audio .ui-icon { background:  url(<%= asset_path('flexible_interface/106-sliders.png') %>) 50% 50% no-repeat;}
+.foot-lights .ui-icon { background:  url(<%= asset_path('flexible_interface/61-brightness.png') %>) 50% 50% no-repeat;}
+.foot-other .ui-icon { background:  url(<%= asset_path('flexible_interface/20-gear2.png') %>) 50% 50% no-repeat;}
+
+
+/*
+	Source Selection boxes
+*/
+.inputs 
+{
+	float:left;
+	text-align: center;
+}
+		
+.inputs .section-head
+{
+	display: table;
+	width:100%;
+}
+
+.inputs .section-label
+{
+	display: table;
+	width:100%;
+}
+		
+.inputs .section-head h2 
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+		
+.inputs .section-box
+{
+	display: table;
+	border:2px solid black;
+			
+	border-radius: 15px;
+	-webkit-box-shadow: 3px 3px 3px #999999;
+	-moz-box-shadow: 3px 3px 3px #999999;
+	-ms-box-shadow: 3px 3px 3px #999999;
+	-o-box-shadow: 3px 3px 3px #999999;
+	box-shadow: 3px 3px 3px #999999;
+}
+		
+.inputs .selected
+{
+	-webkit-box-shadow: 0px 0px 3px #000;
+	-moz-box-shadow: 0px 0px 3px #000;
+	-ms-box-shadow: 0px 0px 3px #000;
+	-o-box-shadow: 0px 0px 3px #000;
+	box-shadow: 0px 0px 3px #000;
+			
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #aaa), color-stop(0.02, #888), color-stop(1, #666));
+	background-image: -moz-gradient(linear, 0 0, 0 100%, color-stop(0, #aaa), color-stop(0.02, #888), color-stop(1, #666));
+	background-image: -ms-gradient(linear, 0 0, 0 100%, color-stop(0, #aaa), color-stop(0.02, #888), color-stop(1, #666));
+	background-image: -o-gradient(linear, 0 0, 0 100%, color-stop(0, #aaa), color-stop(0.02, #888), color-stop(1, #666));
+	background-image: gradient(linear, 0 0, 0 100%, color-stop(0, #aaa), color-stop(0.02, #888), color-stop(1, #666));
+}
+		
+.inputs .section-box span 
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inputs .section-label span
+{
+	display: table-cell;
+	vertical-align: middle;
+}
