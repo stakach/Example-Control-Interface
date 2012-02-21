@@ -53,21 +53,45 @@ $(function () {
 	activePage = $('section.ui-page-active');
 	setHeight();
 	
+	
+	//
+	// Update positioning is the device is repositioned or window re-sized
+	//
 	$(window).bind('resize orientationchange', function (event) {
 		setHeight();
 	});
 	
+	//
+	// Ensure elements are positioned correctly on the new page
+	//
+	/*$('body').bind('pagebeforechange', function (event, data) {
+		issues with jquery 1.7.1
+	});*/
+	
 	$('body').bind('pagechange', function (event, data) {
 		$.mobile.fixedToolbars.setTouchToggleEnabled(false);
-		activePage = data.toPage;
+		activePage = $(data.toPage);
 		setHeight();
 	});
 	
+	//
+	// Cancel button in the shutdown dialog
+	//
 	$('#cancelbtn').bind('tap', function(){
 		
 		history.back();
 		return false;
 		
+	});
+	
+	//
+	// Input switching - interface update
+	//
+	$('body').delegate('div.section-box', 'tap', function () {
+		var $this = $(this);
+		
+		$this.parent().parent().find('div.selected').removeClass('selected');
+		$this.addClass('selected');
 	});
 });
 

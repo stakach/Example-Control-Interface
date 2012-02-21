@@ -14,37 +14,37 @@
 					<h2>Preview</h2>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="prevhdmi" class="section-box">
 						<span>Computer</span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box selected">
+					<div id="prevvga" class="section-box selected">
 						<span>VGA</span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="prevdvi" class="section-box">
 						<span>DVI</span>
 					</div>
 				</div>
 			</div>
-			<div id="project" class="inputs">
+			<div id="display" class="inputs">
 				<div class="section-head">
 					<h2>Project</h2>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="hdmi" class="section-box">
 						<span>Computer</span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="vga" class="section-box">
 						<span>VGA</span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="dvi" class="section-box">
 						<span>DVI</span>
 					</div>
 				</div>
@@ -81,17 +81,17 @@
 				<div class="section-head">
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="audio1" class="section-box">
 						<span>Computer</span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box selected">
+					<div id="audio2" class="section-box selected">
 						<span>VGA</span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="audio3" class="section-box">
 						<span>DVI</span>
 					</div>
 				</div>
@@ -133,17 +133,17 @@
 				<div class="section-head">
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="full" class="section-box">
 						<span><img src="<%= asset_path('flexible_interface/icons/171-sun.png') %>" alt="full" /></span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box selected">
+					<div id="dim" class="section-box selected">
 						<span><img src="<%= asset_path('flexible_interface/icons/171-sun.png') %>" alt="projection" /></span>
 					</div>
 				</div>
 				<div class="section">
-					<div class="section-box">
+					<div id="off" class="section-box">
 						<span><img src="<%= asset_path('flexible_interface/icons/171-sun.png') %>" alt="off" /></span>
 					</div>
 				</div>
@@ -196,8 +196,8 @@
 		<div class="content">
 			<div class="inputs">
 				<div data-role="fieldcontain">
-					<label for="projector1-status">Projector:</label>
-					<select name="projector1-status" id="projector1-status" data-role="slider">
+					<label for="display-status">Projector:</label>
+					<select name="display-status" id="display-status" data-role="slider">
 						<option value="off">Off</option>
 						<option value="on">On</option>
 					</select> 
@@ -205,10 +205,10 @@
 			</div>
 			<div class="inputs">
 				<div data-role="fieldcontain">
-					<label for="screen1-status">Projector Screen:</label>
-					<select name="screen1-status" id="screen1-status" data-role="slider">
-						<option value="off">Up</option>
-						<option value="on">Down</option>
+					<label for="screen-status">Projector Screen:</label>
+					<select name="screen-status" id="screen-status" data-role="slider">
+						<option value="up">Up</option>
+						<option value="down">Down</option>
 					</select>
 				</div>
 			</div>

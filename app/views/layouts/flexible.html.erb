@@ -31,7 +31,7 @@
 	<%= csrf_meta_tag %>	<!-- Rails security tag for ajax requests -->
 	
 </head>
-<body>
+<body data-system="<%= @system %>">
 	
 	<!--
 		Splash page
@@ -55,6 +55,32 @@
 		</div>
 	</section>
 	
+	
+	<!--
+		Hidden Dialogs
+	 -->
+	<div id="login" class="diag" style="display:none; cursor: default">
+		<h1>Login Required</h1>
+		<form action="#">
+			<div>
+				<input class="user" type="text" placeholder="domain\username"><br />
+				<input class="password" type="password" placeholder="password">
+			</div>
+			<input type="submit" class="auth-session button blue" value="Login" />
+			<input type="button" class="do-auth-device button blue" value="Trust this device" />
+		</form>
+	</div>
+	
+	<div id="trust" class="diag" style="display:none; cursor: default">
+		<h1>Reason for trusting?</h1>
+		<form action="#">
+			<div>
+				<textarea cols="30" class="reason" rows="3" placeholder="reason for trusting"></textarea>
+			</div>
+			<input type="submit" class="auth-device button blue" value="Trust this device" />
+		</form>
+		<img src="<%= asset_path('flexible_interface/close.png') %>" alt="" />
+	</div>
 </body>
 </html>
 
