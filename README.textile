@@ -1,0 +1,44 @@
+h1. Example Interface for em_control
+
+This is an example interface that could be used as the basis for understanding or building your own interface for a control system built with em_control
+
+
+h2. How to integrate
+
+# Download, fork or directly link to this interface in your em_control gem file
+#* Bundle install
+# From the admin interface http://localhost:3000/interfaces/dashboard
+# Add the example interface logic code as a dependency
+#* Actual name: Flexible demo
+#* Module name: Interface
+#* Class name: FlexiInterface
+#* Filename: flexible_interface.rb
+#* Click Save
+# Create a new Control System (name it what ever)
+# Create a new Controller logic mapping
+#* Link the control system to the dependency you just added
+
+
+h3. Active the control system
+
+If the control system is not already running just start it:
+
+* rake control
+
+If the control system is running do the following:
+
+# press the tilda key anywhere in the dashboard: ~
+# Click the console to give it focus
+# Login to the control system
+#* authsource name\username (for login)
+# type
+#* new "control system name"
+# The control system has been started
+
+
+h3. Browse to the interface
+
+The URL is: http://localhost:3000/interfaces/flexible_interface/1
+* Where '1' is the control system id
+
+Open multiple windows with the same url (differnet browsers and devices too) to see it in action.
