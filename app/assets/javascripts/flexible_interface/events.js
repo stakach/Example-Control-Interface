@@ -167,15 +167,15 @@ $(document).ready(function () {
 	
 	controller.bind('Interface.light', function (level) {
 		$('#lights div.selected').removeClass('selected');
-		$('#' + input).addClass('selected');
+		$('#' + level).addClass('selected');
 	});
 	
 	controller.bind('Interface.power', function (state) {
-		$('#display-status').val(state);
+		$('#display-status').val(state).slider('refresh');
 	});
 	
 	controller.bind('Interface.screen', function (state) {
-		$('#screen-status').val(state);
+		$('#screen-status').val(state).slider('refresh');
 	});
 	
 	controller.bind('Interface.volume_max', function (value) {
@@ -187,7 +187,7 @@ $(document).ready(function () {
 	});
 	
 	controller.bind('Interface.volume', function (value) {
-		$('#volume').val(value);
+		$('#volume').val(value).slider('refresh');
 	});
 	
 
@@ -200,8 +200,8 @@ $(document).ready(function () {
 		controller.send('Interface.page', $(data.toPage).attr('id'));
 	});
 	
-	$('#volume-wrapper input').change(function () {
-		controller.send("Interface.volume", $(this).val());
+	$('#volume-wrapper').change(function () {
+		controller.send("Interface.volume", $('#volume').val());
 	});
 	
 	$('#display-status').change(function () {
