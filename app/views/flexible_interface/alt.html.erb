@@ -2,7 +2,7 @@
 	Source selection
  -->
 <section data-role="page" id="home" class="single-selection">
-	<header data-role="header">
+	<header data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h1>Sources</h1>
 		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
 	</header><!-- header -->
@@ -50,7 +50,7 @@
 		</div><!-- content -->
 	</div><!-- wrapper -->
 
-	<footer data-id="core-footer" data-role="footer" class="wicons">
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed" data-tap-toggle="false">
 		<nav role="navigation" data-role="navbar" class="wicons ui-state-persist">
 			<ul>
 				<li><a href="#home" class="foot-home ui-btn-active ui-state-persist" data-icon="custom">Sources</a></li>
@@ -66,7 +66,7 @@
 	May need re-think. TODO: Vertical bar
  -->
 <section data-role="page" id="audio">
-	<header data-role="header">
+	<header data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h1>Audio</h1>
 		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
 	</header><!-- header -->
@@ -95,14 +95,14 @@
 			</div>
 			<div id="volume-wrapper" class="inputs">
 				<div data-role="fieldcontain">
-					<input data-theme="b" type="range" name="volume" id="volume" value="0" min="0" max="100"  />
+					<input type="range" name="volume" id="volume" value="50" min="0" max="100" data-highlight="true" />
 					<label for="volume"><h2>Volume</h2></label>
 				</div>
 			</div>
 		</div><!-- content -->
 	</div><!-- wrapper -->
 
-	<footer data-id="core-footer" data-role="footer" class="wicons">
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed" data-tap-toggle="false">
 		<nav role="navigation" data-role="navbar" class="wicons ui-state-persist">
 			<ul>
 				<li><a href="#home" class="foot-home" data-icon="custom">Sources</a></li>
@@ -121,7 +121,7 @@
 	Advanced control
  -->
 <section data-role="page" id="other">
-	<header data-role="header">
+	<header data-role="header" data-position="fixed" data-tap-toggle="false">
 		<h1>Advanced</h1>
 		<a href="#shutdown" data-icon="delete" class="ui-btn-right" data-rel="dialog" data-transition="slideup">Shutdown</a>
 	</header><!-- header -->
@@ -140,7 +140,7 @@
 		</div><!-- content -->
 	</div><!-- wrapper -->
 
-	<footer data-id="core-footer" data-role="footer" class="wicons">
+	<footer data-id="core-footer" data-role="footer" class="wicons" data-position="fixed" data-tap-toggle="false">
 		<nav role="navigation" data-role="navbar" class="wicons ui-state-persist">
 			<ul>
 				<li><a href="#home" class="foot-home" data-icon="custom">Sources</a></li>

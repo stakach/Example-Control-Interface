@@ -49,7 +49,6 @@ function setHeight() {
 // Detect screen size and orientation changes
 //
 $(function () {
-	$.mobile.fixedToolbars.setTouchToggleEnabled(false);
 	activePage = $('section.ui-page-active');
 	setHeight();
 	
@@ -69,7 +68,6 @@ $(function () {
 	});*/
 	
 	$('body').bind('pagechange', function (event, data) {
-		$.mobile.fixedToolbars.setTouchToggleEnabled(false);
 		activePage = $(data.toPage);
 		setHeight();
 	});

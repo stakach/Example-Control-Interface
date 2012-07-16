@@ -3,7 +3,7 @@
   They will automatically be included
   
  *= require flexible_interface/html5reset-1.6.1
- *= require flexible_interface/jquery.mobile-1.0.1.min
+ *= require flexible_interface/jquery.mobile-1.1.1
  *= require flexible_interface/login
  *= require flexible_interface/core
  *= require flexible_interface/dual

@@ -11,7 +11,7 @@ class FlexibleInterfaceController < TokensController
 	end
 	
 	def manifest
-		@last_updated = Time.at(1320700940)
+		@last_updated = Time.at(1320700950)
 		@system = params[:id]
 
 		if stale?(:last_modified => @last_updated.utc, :etag => @last_updated.to_i)

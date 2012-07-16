@@ -25,7 +25,7 @@ $(document).ready(function () {
 	// initialize a new controller object with bindings to special events
 	//
 	$.modal("<div><h1>Connecting. Please wait..</h1></div>");
-	controller = new acaControl.EventsDispatcher({
+	controller = new AutomateEm.EventsDispatcher({
 		system: system_id,						// System callback not called if entered here
 		auto_auth: true,						// Let's auto authenticate
 		idle_update: true						// Update the system when it is not in use
